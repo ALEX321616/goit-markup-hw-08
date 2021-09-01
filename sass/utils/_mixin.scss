@@ -1,0 +1,5 @@
+@mixin trans-form($type, $time: $time-duration, $timing: $timing-function) {
+  @each $var in $type {
+    transition: #{$var} $time $timing;
+  }
+}

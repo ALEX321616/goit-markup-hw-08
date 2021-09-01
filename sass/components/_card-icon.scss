@@ -1,0 +1,40 @@
+/*--раздел соц.сетей--*/
+.card__icon-list {
+  display: grid;
+  grid-template-columns: repeat(4, 44px);
+  grid-template-rows: 44px;
+  grid-column-gap: 10px;
+  justify-content: center;
+  &.footer__network-box--card__icon-list {
+    @media screen and (min-width: 1600px) {
+      justify-content: start;
+    }
+  }
+}
+
+.card__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background: #ffffff1a;
+
+  @include trans-form(background-color);
+
+  &:hover,
+  &:focus {
+    background-color: $color-brend;
+  }
+}
+
+.card__logo {
+  fill: $color-icon;
+  @include trans-form(fill);
+
+  .card__link:hover &,
+  .card__link:focus & {
+    fill: $color-txt-item;
+  }
+}

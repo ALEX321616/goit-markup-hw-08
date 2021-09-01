@@ -1,0 +1,49 @@
+.btn-select {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+
+  & :not(:last-child) {
+    margin-right: 8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    margin-bottom: 34px;
+  }
+}
+
+.btn-select__item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  background-color: $backgr-item;
+  color: $color-title;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 22px;
+  margin-bottom: 16px;
+
+  @include trans-form(background-color box-shadow color);
+  transition-property: color, background-color, box-shadow;
+
+  &:hover,
+  &:focus {
+    background-color: $color-brend;
+    color: $color-txt-item;
+    box-shadow: 0px 4px 4px 0px #00000040;
+  }
+}
+
+.btn-select--current {
+  color: $color-txt-item;
+  background-color: $color-brend;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}

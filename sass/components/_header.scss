@@ -1,0 +1,17 @@
+/*---header--*/
+.header {
+  border-bottom: 1px solid #ececec;
+}
+
+.header-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  height: 60px;
+
+  @media screen and (min-width: 1599px) {
+    height: 80px;
+  }
+}

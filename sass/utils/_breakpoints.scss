@@ -1,0 +1,15 @@
+$breakpoints: (
+  'mobile': (
+    min-width: 480px,
+  ),
+  'tablet': (
+    min-width: 768px,
+  ),
+  'desktop': (
+    min-width: 1600px,
+  ),
+  'desktop-xl': (
+    min-width: 1920px,
+  ),
+  'retina-apple-pasibo-bolshoe': (),
+) !default;

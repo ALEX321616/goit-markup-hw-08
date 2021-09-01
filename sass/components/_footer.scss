@@ -1,0 +1,122 @@
+.footer {
+  padding: 60px 0;
+  background: $primary-backgr;
+}
+.footer__box {
+  display: grid;
+  text-align: center;
+  grid-row-gap: 60px;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: baseline;
+  }
+  @media screen and (min-width: 1600px) {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: baseline;
+    text-align: start;
+    justify-content: space-around;
+  }
+}
+
+.address-box {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $color-txt-item;
+  margin-top: 20px;
+}
+
+.address-box__list {
+  margin-top: 8px;
+
+  & :not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.address-box__link {
+  /*display: block;*/
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: $color-footer-link;
+  @include trans-form(color);
+
+  &:hover,
+  &:focus {
+    color: $color-brend;
+  }
+}
+
+.footer__network-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color-txt-item;
+  margin-bottom: 20px;
+}
+
+.subscription {
+  @media screen and (min-width: 768px) and (max-width: 1599px) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+.subscription__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $color-txt-item;
+}
+
+.subscription__form {
+  @media screen and (min-width: 1600px) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.subscription__input {
+  height: 50px;
+  width: 100%;
+  margin: 20px 0;
+  padding: 0 8px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  @include trans-form(border-color);
+
+  @media screen and (min-width: 767px) {
+    max-width: 450px;
+  }
+  @media screen and (min-width: 1600px) {
+    max-width: 295px;
+    margin-right: 12px;
+  }
+
+  &:focus,
+  &:hover {
+    outline: none;
+    border-color: $color-brend;
+  }
+
+  &:not(:placeholder-shown) {
+    border-color: $color-brend;
+    color: $color-txt-item;
+  }
+}
+
+.subscription__logo {
+  margin-left: 10px;
+}

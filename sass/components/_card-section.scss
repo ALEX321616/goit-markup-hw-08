@@ -1,0 +1,67 @@
+.card {
+  background: $backgr-item;
+  text-align: center;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: $color-title;
+  margin-top: 0;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1599px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
+
+.card__list {
+  display: grid;
+  grid-row-gap: 30px;
+
+  @media screen and (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 30px;
+  }
+
+  @media screen and (min-width: 1600px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card__item {
+  background: $color-txt-item;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card__img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__content {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  padding: 30px 5px 24px;
+
+  @media screen and (min-width: 1600px) {
+    padding-bottom: 30px;
+  }
+}
+
+.card__item-title {
+  font-weight: 500;
+  color: $color-title;
+  margin-bottom: 10px;
+}
+
+.card__text {
+  letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
