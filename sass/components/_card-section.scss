@@ -12,7 +12,7 @@
   margin-top: 0;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 1599px) {
+  @media screen and (min-width: 1199px) {
     font-size: 36px;
     margin-bottom: 50px;
   }
@@ -27,7 +27,7 @@
     grid-column-gap: 30px;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     grid-template-columns: repeat(4, 1fr);
   }
 }
@@ -50,7 +50,7 @@
   letter-spacing: 0.03em;
   padding: 30px 5px 24px;
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     padding-bottom: 30px;
   }
 }

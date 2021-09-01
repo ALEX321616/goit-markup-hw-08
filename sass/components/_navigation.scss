@@ -34,7 +34,7 @@
     align-items: center;
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
   }
 }
@@ -86,13 +86,13 @@
 }
 
 .nav__contact-item {
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     &:not(:first-child) {
       margin-left: 50px;
     }
   }
 
-  @media screen and (max-width: 1599px) {
+  @media screen and (max-width: 1199px) {
     &:not(:last-child) {
       margin-bottom: 10px;
     }

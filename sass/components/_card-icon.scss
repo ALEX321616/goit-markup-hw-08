@@ -6,7 +6,7 @@
   grid-column-gap: 10px;
   justify-content: center;
   &.footer__network-box--card__icon-list {
-    @media screen and (min-width: 1600px) {
+    @media screen and (min-width: 1200px) {
       justify-content: start;
     }
   }

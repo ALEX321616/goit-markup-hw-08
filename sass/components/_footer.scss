@@ -11,7 +11,7 @@
     grid-template-columns: repeat(2, 1fr);
     align-items: baseline;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     grid-template-columns: repeat(3, 1fr);
     align-items: baseline;
     text-align: start;
@@ -60,7 +60,7 @@
 }
 
 .subscription {
-  @media screen and (min-width: 768px) and (max-width: 1599px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     grid-column-start: 1;
     grid-column-end: 3;
   }
@@ -76,7 +76,7 @@
 }
 
 .subscription__form {
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
   }
@@ -100,7 +100,7 @@
   @media screen and (min-width: 767px) {
     max-width: 450px;
   }
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     max-width: 295px;
     margin-right: 12px;
   }
