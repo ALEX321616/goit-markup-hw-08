@@ -12,7 +12,8 @@
     align-items: baseline;
   }
   @media screen and (min-width: 1200px) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: auto auto auto;
+    grid-row: 1;
     align-items: baseline;
     text-align: start;
     justify-content: space-around;
@@ -101,7 +102,7 @@
     max-width: 450px;
   }
   @media screen and (min-width: 1200px) {
-    max-width: 295px;
+    width: 358px;
     margin-right: 12px;
   }
 
