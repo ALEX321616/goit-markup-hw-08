@@ -30,21 +30,21 @@
             aria-expanded="false"
             data-menu-button
           >
-            <svg width="40" height="40" aria-level="Переключатель мобильного меню">
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
               <use class="icon__menu" href="./images/symbol-defs.svg#icon-menu"></use>
             </svg>
           </button>
 
           <div class="menu-container js-menu-container" id="mobile-menu">
             <button type="button" class="menu__toggle js-close-menu">
-              <svg width="40" height="40" aria-level="Переключатель мобильного меню">
+              <svg width="40" height="40" aria-label="Переключатель мобильного меню">
                 <use class="icon-close" href="./images/symbol-defs.svg#icon-close"></use>
               </svg>
             </button>
 
             <ul class="nav__list__mobile">
               <li class="nav__item__mobile">
-                <a class="nav__link__mobile" href="#">Студия</a>
+                <a class="nav__link__mobile" href="./index.html">Студия</a>
               </li>
               <li class="nav__item__mobile">
                 <a class="nav__link__mobile" href="./portfolio.html">Портфолио</a>
@@ -135,12 +135,30 @@
             <li class="gallery__item">
               <a class="gallery__link" href="#">
                 <div class="gallery__thumb">
-                  <img
-                    class="gallery__img"
-                    src="./images/project-1.jpg"
-                    alt="Второй проект"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-1-450.jpg,
+                        ./images/project-1-450@2x.jpg 2x,
+                        ./images/project-1-450@3x.jpg 3x
+                      "
+                      media="(max-width: 480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-1-370.jpg,
+                        ./images/project-1-370@2x.jpg 2x,
+                        ./images/project-1-370@3x.jpg 3x
+                      "
+                      media="(min-width: 481px)"
+                    />
+                    <img
+                      class="gallery__img"
+                      src="./images/project-1-450.jpg"
+                      alt="Первый проект"
+                    />
+                  </picture>
+
                   <p class="gallery__overlay">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -158,12 +176,30 @@
             <li class="gallery__item">
               <a class="gallery__link" href="#">
                 <div class="gallery__thumb">
-                  <img
-                    class="gallery__img"
-                    src="./images/project-2.jpg"
-                    alt="Второй проект"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-2-450.jpg,
+                        ./images/project-2-450@2x.jpg 2x,
+                        ./images/project-2-450@3x.jpg 3x
+                      "
+                      media="(max-width: 480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-2-370.jpg,
+                        ./images/project-2-370@2x.jpg 2x,
+                        ./images/project-2-370@3x.jpg 3x
+                      "
+                      media="(min-width: 481px)"
+                    />
+                    <img
+                      class="gallery__img"
+                      src="./images/project-2-450.jpg"
+                      alt="Второй проект"
+                    />
+                  </picture>
+
                   <p class="gallery__overlay">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -180,12 +216,30 @@
             <li class="gallery__item">
               <a class="gallery__link" href="#">
                 <div class="gallery__thumb">
-                  <img
-                    class="gallery__img"
-                    src="./images/project-3.jpg"
-                    alt="Третий проект"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-3-450.jpg,
+                        ./images/project-3-450@2x.jpg 2x,
+                        ./images/project-3-450@3x.jpg 3x
+                      "
+                      media="(max-width: 480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-3-370.jpg,
+                        ./images/project-3-370@2x.jpg 2x,
+                        ./images/project-3-370@3x.jpg 3x
+                      "
+                      media="(min-width: 481px)"
+                    />
+                    <img
+                      class="gallery__img"
+                      src="./images/project-3-450.jpg"
+                      alt="Третий проект"
+                    />
+                  </picture>
+
                   <p class="gallery__overlay">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -202,12 +256,30 @@
             <li class="gallery__item">
               <a class="gallery__link" href="#">
                 <div class="gallery__thumb">
-                  <img
-                    class="gallery__img"
-                    src="./images/project-4.jpg"
-                    alt="Четвертый проект"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-4-450.jpg,
+                        ./images/project-4-450@2x.jpg 2x,
+                        ./images/project-4-450@3x.jpg 3x
+                      "
+                      media="(max-width: 480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-4-370.jpg,
+                        ./images/project-4-370@2x.jpg 2x,
+                        ./images/project-4-370@3x.jpg 3x
+                      "
+                      media="(min-width: 481px)"
+                    />
+                    <img
+                      class="gallery__img"
+                      src="./images/project-4-450.jpg"
+                      alt="Четвертый проект"
+                    />
+                  </picture>
+
                   <p class="gallery__overlay">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -224,12 +296,26 @@
             <li class="gallery__item">
               <a class="gallery__link" href="#">
                 <div class="gallery__thumb">
-                  <img
-                    class="gallery__img"
-                    src="./images/project-5.jpg"
-                    alt="Пятый проект"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-5-450.jpg,
+                        ./images/project-5-450@2x.jpg 2x,
+                        ./images/project-5-450@3x.jpg 3x
+                      "
+                      media="(max-width: 480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-5-370.jpg,
+                        ./images/project-5-370@2x.jpg 2x,
+                        ./images/project-5-370@3x.jpg 3x
+                      "
+                      media="(min-width: 481px)"
+                    />
+                    <img class="gallery__img" src="./images/project-5-450.jpg" alt="Пятый проект" />
+                  </picture>
+
                   <p class="gallery__overlay">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -246,12 +332,30 @@
             <li class="gallery__item">
               <a class="gallery__link" href="#">
                 <div class="gallery__thumb">
-                  <img
-                    class="gallery__img"
-                    src="./images/project-6.jpg"
-                    alt="Шестой  проект"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-6-450.jpg,
+                        ./images/project-6-450@2x.jpg 2x,
+                        ./images/project-6-450@3x.jpg 3x
+                      "
+                      media="(max-width: 480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-6-370.jpg,
+                        ./images/project-6-370@2x.jpg 2x,
+                        ./images/project-6-370@3x.jpg 3x
+                      "
+                      media="(min-width: 481px)"
+                    />
+                    <img
+                      class="gallery__img"
+                      src="./images/project-6-450.jpg"
+                      alt="Шестой  проект"
+                    />
+                  </picture>
+
                   <p class="gallery__overlay">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -268,12 +372,24 @@
             <li class="gallery__item">
               <a class="gallery__link" href="#">
                 <div class="gallery__thumb">
-                  <img
-                    class="gallery__img"
-                    src="./images/project-7.jpg"
-                    alt="Седьмой проект"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-7-450.jpg,
+                        ./images/project-7-450@2x.jpg 2x,
+                        ./images/project-7-450@3x.jpg 3x
+                      "
+                      media="(max-width: 480px)" />
+                    <source
+                      srcset="
+                        ./images/project-7-370.jpg,
+                        ./images/project-7-370@2x.jpg 2x,
+                        ./images/project-7-370@3x.jpg 3x
+                      "
+                      media="(min-width: 481px)" />
+                    <img class="gallery__img" src="./images/project-7-450.jpg" alt="Седьмой проект"
+                  /></picture>
+
                   <p class="gallery__overlay">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -290,12 +406,24 @@
             <li class="gallery__item">
               <a class="gallery__link" href="#">
                 <div class="gallery__thumb">
-                  <img
-                    class="gallery__img"
-                    src="./images/project-8.jpg"
-                    alt="Восьмой проект"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-8-450.jpg,
+                        ./images/project-8-450@2x.jpg 2x,
+                        ./images/project-8-450@3x.jpg 3x
+                      "
+                      media="(max-width: 480px)" />
+                    <source
+                      srcset="
+                        ./images/project-8-370.jpg,
+                        ./images/project-8-370@2x.jpg 2x,
+                        ./images/project-8-370@3x.jpg 3x
+                      "
+                      media="(min-width: 481px)" />
+                    <img class="gallery__img" src="./images/project-8-450.jpg" alt="Восьмой проект"
+                  /></picture>
+
                   <p class="gallery__overlay">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -312,12 +440,30 @@
             <li class="gallery__item">
               <a class="gallery__link" href="#">
                 <div class="gallery__thumb">
-                  <img
-                    class="gallery__img"
-                    src="./images/project-9.jpg"
-                    alt="Девятый проект"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/project-9-450.jpg,
+                        ./images/project-9-450@2x.jpg 2x,
+                        ./images/project-9-450@3x.jpg 3x
+                      "
+                      media="(max-width: 480px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/project-9-370.jpg,
+                        ./images/project-9-370@2x.jpg 2x,
+                        ./images/project-9-370@3x.jpg 3x
+                      "
+                      media="(min-width: 481px)"
+                    />
+                    <img
+                      class="gallery__img"
+                      src="./images/project-9-450.jpg"
+                      alt="Девятый проект"
+                    />
+                  </picture>
+
                   <p class="gallery__overlay">
                     Технокряк это современная площадка распространения коронавируса. Компании
                     используют эту платформу для цифрового шпионажа и атак на защищённые сервера
@@ -411,7 +557,6 @@
         </div>
       </div>
     </footer>
-    <script src="./js/modal.js"></script>
 
     <script
       defer

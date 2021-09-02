@@ -31,6 +31,10 @@
 
 .card__logo {
   fill: $color-icon;
+  .footer__network-box & {
+    fill: $color-txt-item;
+  }
+
   @include trans-form(fill);
 
   .card__link:hover &,

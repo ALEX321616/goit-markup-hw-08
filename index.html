@@ -30,14 +30,14 @@
             aria-expanded="false"
             data-menu-button
           >
-            <svg width="40" height="40" aria-level="Переключатель мобильного меню">
+            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
               <use class="icon__menu" href="./images/symbol-defs.svg#icon-menu"></use>
             </svg>
           </button>
 
           <div class="menu-container js-menu-container" id="mobile-menu">
             <button type="button" class="menu__toggle js-close-menu">
-              <svg width="40" height="40" aria-level="Переключатель мобильного меню">
+              <svg width="40" height="40" aria-label="Переключатель мобильного меню">
                 <use class="icon-close" href="./images/symbol-defs.svg#icon-close"></use>
               </svg>
             </button>
@@ -184,28 +184,55 @@
 
           <ul class="direct__list list">
             <li class="direct__item">
-              <img
-                class="direct__img"
-                src="./images/image-programer.jpg"
-                alt="Программист за столом"
-              />
+              <div class="direct__trumb">
+                <img
+                  class="direct__img"
+                  srcset="
+                    ./images/image-programer.jpg    1x,
+                    ./images/image-programer@2x.jpg 2x,
+                    ./images/image-programer@3x.jpg 3x
+                  "
+                  src="./images/image-programer.jpg"
+                  alt="Программист за столом"
+                  width="370"
+                />
+              </div>
+
               <p class="direct__subtitle">Десктопные приложения</p>
             </li>
 
             <li class="direct__item">
-              <img
-                class="direct__img"
-                src="./images/web-designers.jpg"
-                alt="Веб-дизайнер с мобильным телефоном"
-              />
+              <div class="direct__trumb">
+                <img
+                  class="direct__img"
+                  srcset="
+                    ./images/web-designers.jpg    1x,
+                    ./images/web-designers@2x.jpg 2x,
+                    ./images/web-designers@3x.jpg 3x
+                  "
+                  src="./images/web-designers.jpg"
+                  alt="Веб-дизайнер с мобильным телефоном"
+                  width="370"
+                />
+              </div>
+
               <p class="direct__subtitle">Мобильные приложения</p>
             </li>
             <li class="direct__item">
-              <img
-                class="direct__img"
-                src="./images/creative-web-design.jpg"
-                alt="Веб-дизайнер с графическим планшетом"
-              />
+              <div class="direct__trumb">
+                <img
+                  class="direct__img"
+                  srcset="
+                    ./images/creative-web-design.jpg    1x,
+                    ./images/creative-web-design@2x.jpg 2x,
+                    ./images/creative-web-design@3x.jpg 3x
+                  "
+                  src="./images/creative-web-design.jpg"
+                  alt="Веб-дизайнер с графическим планшетом"
+                  width="370"
+                />
+              </div>
+
               <p class="direct__subtitle">Дизайнерские решения</p>
             </li>
           </ul>
@@ -218,12 +245,21 @@
           <h2 class="card__title">Наша команда</h2>
           <ul class="card__list list">
             <li class="card__item">
-              <img
-                class="card__img"
-                src="./images/igor_demyanenko.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-              />
+              <div class="card__trumb">
+                <img
+                  class="card__img"
+                  srcset="
+                    ./images/igor_demyanenko.jpg     450w,
+                    ./images/igor_demyanenko@2x.jpg  900w,
+                    ./images/igor_demyanenko@3x.jpg 1350w
+                  "
+                  src="./images/igor_demyanenko.jpg"
+                  alt="Игорь Демьяненко"
+                  width="270"
+                  sizes=" (min-width:1200px) 25vw, (min-width:768px) 50vw, (min-width:480px) 100vw, 100vw"
+                />
+              </div>
+
               <div class="card__content">
                 <h3 class="card__item-title">Игорь Демьяненко</h3>
                 <p class="card__text">Product Designer</p>
@@ -261,12 +297,20 @@
             </li>
 
             <li class="card__item">
-              <img
-                class="card__img"
-                src="./images/olga_repina.jpg"
-                alt="Ольга Репина"
-                width="270"
-              />
+              <div class="card__trumb">
+                <img
+                  class="card__img"
+                  srcset="
+                    ./images/olga_repina.jpg     450w,
+                    ./images/olga_repina@2x.jpg  900w,
+                    ./images/olga_repina@3x.jpg 1350w
+                  "
+                  src="./images/olga_repina.jpg"
+                  alt="Ольга Репина"
+                  sizes=" (min-width:1200px) 25vw, (min-width:768px) 50vw, (min-width:480px) 100vw, 100vw"
+                />
+              </div>
+
               <div class="card__content">
                 <h3 class="card__item-title">Ольга Репина</h3>
                 <p class="card__text">Frontend Developer</p>
@@ -304,12 +348,20 @@
             </li>
 
             <li class="card__item">
-              <img
-                class="card__img"
-                src="./images/nikolay_tarasov.jpg"
-                alt="Николай Тарасов"
-                width="270"
-              />
+              <div class="card__trumb">
+                <img
+                  class="card__img"
+                  srcset="
+                    ./images/nikolay_tarasov.jpg     450w,
+                    ./images/nikolay_tarasov@2x.jpg  900w,
+                    ./images/nikolay_tarasov@3x.jpg 1350w
+                  "
+                  src="./images/nikolay_tarasov.jpg"
+                  alt="Николай Тарасов"
+                  sizes=" (min-width:1200px) 25vw, (min-width:768px) 50vw, (min-width:480px) 100vw, 100vw"
+                />
+              </div>
+
               <div class="card__content">
                 <h3 class="card__item-title">Николай Тарасов</h3>
                 <p class="card__text">Marketing</p>
@@ -347,12 +399,20 @@
             </li>
 
             <li class="card__item">
-              <img
-                class="card__img"
-                src="./images/mikhail_ermakov.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-              />
+              <div class="card__trumb">
+                <img
+                  class="card__img"
+                  srcset="
+                    ./images/mikhail_ermakov.jpg     450w,
+                    ./images/mikhail_ermakov@2x.jpg  900w,
+                    ./images/mikhail_ermakov@3x.jpg 1350w
+                  "
+                  src="./images/mikhail_ermakov.jpg"
+                  alt="Михаил Ермаков"
+                  sizes=" (min-width:1200px) 25vw, (min-width:768px) 50vw, (min-width:480px) 100vw, 100vw"
+                />
+              </div>
+
               <div class="card__content">
                 <h3 class="card__item-title">Михаил Ермаков</h3>
                 <p class="card__text">UI Designe</p>
@@ -555,13 +615,12 @@
           </div>
 
           <div class="modal__text">
-            <label for="comment" class="modal__comment">Комментарий</label>
+            <label for="comment-text">Комментарий</label>
             <textarea
               class="modal__textarea"
               name="comment"
-              rows="10"
-              id="comment"
               placeholder="Введите текст"
+              id="comment-text"
             ></textarea>
           </div>
 
@@ -573,7 +632,7 @@
                 name="check-policy"
                 value="check-value"
               />
-              <svg class="modal__checkbox-box" width="16" height="15">
+              <svg class="modal__checkbox-box" width="16" height="16">
                 <use href="./images/symbol-defs.svg#icon-check"></use>
               </svg>
               Соглашаюсь с рассылкой и принимаю

@@ -1,7 +1,6 @@
 /*------advants-list------*/
 .advants-list {
   display: grid;
-  grid-template-columns: 1fr;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
 
@@ -30,6 +29,9 @@
   text-transform: uppercase;
   color: $color-title;
   margin-top: 30px;
+  @media screen and (min-width: 481px) {
+    text-align: left;
+  }
 }
 
 .advants-list__text {
