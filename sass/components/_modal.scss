@@ -50,6 +50,10 @@
   letter-spacing: 0.03em;
   color: $color-title;
   margin: 0;
+
+  @media screen and (min-width: 768px) {
+    line-height: 1.15;
+  }
 }
 
 .modal__field {
@@ -162,6 +166,11 @@
   line-height: 1.71;
   color: $color-text;
   padding: 0;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal__checkbox-input {
