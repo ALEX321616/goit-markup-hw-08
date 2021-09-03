@@ -397,6 +397,9 @@ body.modal-open {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.nav__link__mobile--current {
+  color: #2196f3;
+}
 .nav__link__mobile:hover, .nav__link__mobile:focus {
   color: #2196f3;
 }

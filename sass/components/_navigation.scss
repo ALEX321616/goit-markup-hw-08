@@ -217,6 +217,10 @@
   letter-spacing: 0.02em;
   color: $color-title;
 
+  &--current {
+    color: $color-brend;
+  }
+
   @include trans-form(color);
   &:hover,
   &:focus {
