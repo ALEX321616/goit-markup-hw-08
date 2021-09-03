@@ -28,6 +28,7 @@
             type="button"
             class="menu__toggle js-open-menu"
             aria-expanded="false"
+            aria-label="Открыть меню"
             data-menu-button
           >
             <svg width="40" height="40" aria-label="Переключатель мобильного меню">
@@ -36,7 +37,7 @@
           </button>
 
           <div class="menu-container js-menu-container" id="mobile-menu">
-            <button type="button" class="menu__toggle js-close-menu">
+            <button type="button" aria-label="Закрыть меню" class="menu__toggle js-close-menu">
               <svg width="40" height="40" aria-label="Переключатель мобильного меню">
                 <use class="icon-close" href="./images/symbol-defs.svg#icon-close"></use>
               </svg>
@@ -120,7 +121,14 @@
       <section class="main">
         <div class="container">
           <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="main-btn current" type="button" data-modal-open>Заказать услугу</button>
+          <button
+            class="main-btn current"
+            type="button"
+            aria-label="Заказать услугу"
+            data-modal-open
+          >
+            Заказать услугу
+          </button>
         </div>
       </section>
 
@@ -570,7 +578,11 @@
               placeholder="E-mail"
             />
 
-            <button type="submit" class="main-btn footer__subscription-btn--location">
+            <button
+              type="submit"
+              aria-label="Подписаться"
+              class="main-btn footer__subscription-btn--location"
+            >
               Подписаться
               <svg class="subscription__logo" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-send"></use>
@@ -583,7 +595,7 @@
 
     <div class="backrdrop backrdrop--is-hidden" data-modal>
       <div class="modal">
-        <button class="modal__btn-close" data-modal-close>
+        <button class="modal__btn-close" aria-label="Закрыть окно" data-modal-close>
           <svg class="modal__btn-icon" width="18" height="18">
             <use href="./images/symbol-defs.svg#icon-close-modal"></use>
           </svg>
@@ -639,7 +651,7 @@
               <a href="#" class="modal__checkbox-link">Условия договора</a>
             </label>
           </div>
-          <button type="submit" class="main-btn">Отправить</button>
+          <button type="submit" aria-label="Отправить" class="main-btn">Отправить</button>
         </form>
       </div>
     </div>

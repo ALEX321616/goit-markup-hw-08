@@ -27,6 +27,7 @@
           <button
             type="button"
             class="menu__toggle js-open-menu"
+            aria-label="Открыть меню"
             aria-expanded="false"
             data-menu-button
           >
@@ -36,7 +37,7 @@
           </button>
 
           <div class="menu-container js-menu-container" id="mobile-menu">
-            <button type="button" class="menu__toggle js-close-menu">
+            <button type="button" aria-label="Закрыть меню" class="menu__toggle js-close-menu">
               <svg width="40" height="40" aria-label="Переключатель мобильного меню">
                 <use class="icon-close" href="./images/symbol-defs.svg#icon-close"></use>
               </svg>
@@ -123,11 +124,29 @@
 
           <!--Фильтр по разделам-->
           <ul class="btn-select list">
-            <li><button class="btn-select__item btn-select--current" type="button">Все</button></li>
-            <li><button class="btn-select__item" type="button">Веб-сайты</button></li>
-            <li><button class="btn-select__item" type="button">Приложения</button></li>
-            <li><button class="btn-select__item" type="button">Дизайн</button></li>
-            <li><button class="btn-select__item" type="button">Маркетинг</button></li>
+            <li>
+              <button class="btn-select__item btn-select--current" aria-label="Все" type="button">
+                Все
+              </button>
+            </li>
+            <li>
+              <button class="btn-select__item" aria-label="Веб-сайты" type="button">
+                Веб-сайты
+              </button>
+            </li>
+            <li>
+              <button class="btn-select__item" aria-label="Приложения" type="button">
+                Приложения
+              </button>
+            </li>
+            <li>
+              <button class="btn-select__item" aria-label="Дизайн" type="button">Дизайн</button>
+            </li>
+            <li>
+              <button class="btn-select__item" aria-label="Маркетинг" type="button">
+                Маркетинг
+              </button>
+            </li>
           </ul>
 
           <h2 class="visually-hidden">Примеры работ</h2>
@@ -547,7 +566,11 @@
               placeholder="E-mail"
             />
 
-            <button type="submit" class="main-btn footer__subscription-btn--location">
+            <button
+              type="submit"
+              aria-label="Подписаться"
+              class="main-btn footer__subscription-btn--location"
+            >
               Подписаться
               <svg class="subscription__logo" width="24" height="24">
                 <use href="./images/symbol-defs.svg#icon-send"></use>
