@@ -212,10 +212,13 @@
 .nav__link__mobile {
   display: inline-block;
   font-weight: 500;
-  font-size: 40px;
+  font-size: 30px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: $color-title;
+  @media screen and (min-width: 468px) {
+    font-size: 40px;
+  }
 
   &--current {
     color: $color-brend;
