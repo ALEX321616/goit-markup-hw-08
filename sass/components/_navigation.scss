@@ -259,26 +259,37 @@
 .soc__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 .soc__list-item {
-  margin-top: 10px;
+  margin-bottom: 10px;
   &:not(:last-child) {
-    margin-right: 20px;
+    margin-right: 10px;
   }
 }
 .soc__list-link {
+  display: inline-flex;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: $color-text;
   color: #2196f3;
+}
 
-  /* @include trans-form(color);
+.soc__list-link::after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: inherit;
+  .soc__list-item:not(:last-child) > & {
+    margin-left: 10px;
+    background-color: rgba(33, 33, 33, 0.2);
+  }
+}
+
+/* @include trans-form(color);
   &:hover,
   &:focus {
     color: $color-brend;
     fill: $color-brend;
   }*/
-}

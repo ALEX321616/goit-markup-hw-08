@@ -451,33 +451,44 @@ body.modal-open {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .soc__list-item {
-  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .soc__list-item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .soc__list-link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #757575;
   color: #2196f3;
-  /* @include trans-form(color);
+}
+
+.soc__list-link::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: inherit;
+}
+.soc__list-item:not(:last-child) > .soc__list-link::after {
+  margin-left: 10px;
+  background-color: rgba(33, 33, 33, 0.2);
+}
+
+/* @include trans-form(color);
   &:hover,
   &:focus {
     color: $color-brend;
     fill: $color-brend;
   }*/
-}
-
 .main-btn {
   display: -webkit-box;
   display: -ms-flexbox;
