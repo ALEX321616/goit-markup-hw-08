@@ -114,12 +114,12 @@ body.modal-open {
 }
 @media screen and (min-width: 768px) {
   .header-box {
+    height: 80px;
     width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
   .header-box {
-    height: 80px;
     width: 1200px;
   }
 }

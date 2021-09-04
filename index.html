@@ -256,23 +256,39 @@
           <ul class="card__list list">
             <li class="card__item">
               <div class="card__trumb">
-                <img
-                  class="card__img"
-                  srcset="
-                    ./images/igor_demyanenko-450.jpg     450w,
-                    ./images/igor_demyanenko-450@2x.jpg  900w,
-                    ./images/igor_demyanenko-450@3x.jpg 1350w,
-                    ./images/igor_demyanenko-354.jpg     354w,
-                    ./images/igor_demyanenko-354@2x.jpg  708w,
-                    ./images/igor_demyanenko-354@3x.jpg 1062w,
-                    ./images/igor_demyanenko-270.jpg     270w,
-                    ./images/igor_demyanenko-270@2x.jpg  540w,
-                    ./images/igor_demyanenko-270@3x.jpg  810w
-                  "
-                  src="./images/igor_demyanenko.jpg"
-                  alt="Игорь Демьяненко"
-                  sizes=" (min-width:1200px) 25vw, (min-width:768px) 50vw, (max-width:480px) 100vw, 100vw"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/igor_demyanenko-270.jpg    1x,
+                      ./images/igor_demyanenko-270@2x.jpg 2x,
+                      ./images/igor_demyanenko-270@3x.jpg 3x
+                    "
+                    media="(min-width:1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/igor_demyanenko-354.jpg    1x,
+                      ./images/igor_demyanenko-354@2x.jpg 2x,
+                      ./images/igor_demyanenko-354@3x.jpg 3x
+                    "
+                    media="(max-width:1199px)  and (min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/igor_demyanenko-450.jpg    1x,
+                      ./images/igor_demyanenko-450@2x.jpg 2x,
+                      ./images/igor_demyanenko-450@3x.jpg 3x
+                    "
+                    media="(max-width:767px)"
+                  />
+
+                  <img
+                    class="card__img"
+                    scr="./images/igor_demyanenko-450.jpg"
+                    alt="Игорь Демьяненко"
+                  />
+                </picture>
               </div>
 
               <div class="card__content">
@@ -313,23 +329,35 @@
 
             <li class="card__item">
               <div class="card__trumb">
-                <img
-                  class="card__img"
-                  srcset="
-                    ./images/olga_repina-450.jpg     450w,
-                    ./images/olga_repina-450@2x.jpg  900w,
-                    ./images/olga_repina-450@3x.jpg 1350w,
-                    ./images/olga_repina-354.jpg     354w,
-                    ./images/olga_repina-354@2x.jpg  708w,
-                    ./images/olga_repina-354@3x.jpg 1062w,
-                    ./images/olga_repina-270.jpg     270w,
-                    ./images/olga_repina-270@2x.jpg  540w,
-                    ./images/olga_repina-270@3x.jpg  810w
-                  "
-                  src="./images/olga_repina.jpg"
-                  alt="Ольга Репина"
-                  sizes=" (min-width:1200px) 25vw, (min-width:768px) 50vw, (min-width:480px) 100vw, 100vw"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/olga_repina-270.jpg    1x,
+                      ./images/olga_repina-270@2x.jpg 2x,
+                      ./images/olga_repina-270@3x.jpg 3x
+                    "
+                    media="(min-width:1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/olga_repina-354.jpg    1x,
+                      ./images/olga_repina-354@2x.jpg 2x,
+                      ./images/olga_repina-354@3x.jpg 3x
+                    "
+                    media="(max-width:1199px)  and (min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/olga_repina-450.jpg    1x,
+                      ./images/olga_repina-450@2x.jpg 2x,
+                      ./images/olga_repina-450@3x.jpg 3x
+                    "
+                    media="(max-width:767px)"
+                  />
+
+                  <img class="card__img" scr="./images/olga_repina-450.jpg" alt="Ольга Репина" />
+                </picture>
               </div>
 
               <div class="card__content">
@@ -370,23 +398,39 @@
 
             <li class="card__item">
               <div class="card__trumb">
-                <img
-                  class="card__img"
-                  srcset="
-                    ./images/nikolay_tarasov-450.jpg     450w,
-                    ./images/nikolay_tarasov-450@2x.jpg  900w,
-                    ./images/nikolay_tarasov-450@3x.jpg 1350w,
-                    ./images/nikolay_tarasov-354.jpg     354w,
-                    ./images/nikolay_tarasov-354@2x.jpg  708w,
-                    ./images/nikolay_tarasov-354@3x.jpg 1062w,
-                    ./images/nikolay_tarasov-270.jpg     270w,
-                    ./images/nikolay_tarasov-270@2x.jpg  540w,
-                    ./images/nikolay_tarasov-270@3x.jpg  810w
-                  "
-                  src="./images/nikolay_tarasov.jpg"
-                  alt="Николай Тарасов"
-                  sizes=" (min-width:1200px) 25vw, (min-width:768px) 50vw, (min-width:480px) 100vw, 100vw"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/nikolay_tarasov-270.jpg    1x,
+                      ./images/nikolay_tarasov-270@2x.jpg 2x,
+                      ./images/nikolay_tarasov-270@3x.jpg 3x
+                    "
+                    media="(min-width:1200px)"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/nikolay_tarasov-354.jpg    1x,
+                      ./images/nikolay_tarasov-354@2x.jpg 2x,
+                      ./images/nikolay_tarasov-354@3x.jpg 3x
+                    "
+                    media="(max-width:1199px)  and (min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/nikolay_tarasov-450.jpg    1x,
+                      ./images/nikolay_tarasov-450@2x.jpg 2x,
+                      ./images/nikolay_tarasov-450@3x.jpg 3x
+                    "
+                    media="(max-width:767px)"
+                  />
+
+                  <img
+                    class="card__img"
+                    scr="./images/nikolay_tarasov-450.jpg"
+                    alt="Николай Тарасов"
+                  />
+                </picture>
               </div>
 
               <div class="card__content">
@@ -427,23 +471,38 @@
 
             <li class="card__item">
               <div class="card__trumb">
-                <img
-                  class="card__img"
-                  srcset="
-                    ./images/mikhail_ermakov-450.jpg     450w,
-                    ./images/mikhail_ermakov-450@2x.jpg  900w,
-                    ./images/mikhail_ermakov-450@3x.jpg 1350w,
-                    ./images/mikhail_ermakov-354.jpg     354w,
-                    ./images/mikhail_ermakov-354@2x.jpg  708w,
-                    ./images/mikhail_ermakov-354@3x.jpg 1062w,
-                    ./images/mikhail_ermakov-270.jpg     270w,
-                    ./images/mikhail_ermakov-270@2x.jpg  540w,
-                    ./images/mikhail_ermakov-270@3x.jpg  810w
-                  "
-                  src="./images/mikhail_ermakov.jpg"
-                  alt="Михаил Ермаков"
-                  sizes=" (min-width:1200px) 25vw, (min-width:768px) 50vw, (min-width:480px) 100vw, 100vw"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/mikhail_ermakov-270.jpg    1x,
+                      ./images/mikhail_ermakov-270@2x.jpg 2x,
+                      ./images/mikhail_ermakov-270@3x.jpg 3x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mikhail_ermakov-354.jpg    1x,
+                      ./images/mikhail_ermakov-354@2x.jpg 2x,
+                      ./images/mikhail_ermakov-354@3x.jpg 3x
+                    "
+                    media="(max-width:1199px)  and (min-width:768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mikhail_ermakov-450.jpg    1x,
+                      ./images/mikhail_ermakov-450@2x.jpg 2x,
+                      ./images/mikhail_ermakov-450@3x.jpg 3x
+                    "
+                    media="(max-width:767px)"
+                  />
+
+                  <img
+                    class="card__img"
+                    scr="./images/mikhail_ermakov-450.jpg"
+                    alt="Михаил Ермаков"
+                  />
+                </picture>
               </div>
 
               <div class="card__content">
